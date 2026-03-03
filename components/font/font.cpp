@@ -104,7 +104,6 @@ bool Font::get_glyph_dsc_cb(const lv_font_t *font, lv_font_glyph_dsc_t *dsc, uin
   dsc->box_w = gd->width;
   dsc->box_h = gd->height;
   dsc->is_placeholder = 0;
-  dsc->bpp = fe->get_bpp();
   dsc->format = (lv_font_glyph_format_t) fe->get_bpp();
   dsc->gid.index = unicode_letter;
   return true;
