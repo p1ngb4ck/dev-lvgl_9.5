@@ -128,7 +128,6 @@ class WidgetType:
                 f"lvgl.{self.name}.update",
                 ObjUpdateAction,
                 base_update_schema(self, self.parts).extend(self.modify_schema),
-            ,
                 synchronous=True,
             )(update_to_code)
 
